@@ -34,8 +34,8 @@ export default class App extends React.Component {
 	UploadImage = async (Image) => {
 		const data = new FormData();
 		data.append("file", Image);
-		data.append("upload_preset", "vocs5isx");
-		data.append("cloud-name", "bhushanoo");
+		data.append("upload_preset", "preset_name");
+		data.append("cloud-name", "cloudname");
 
 		fetch("https://api.cloudinary.com/v1_1/bhushanoo/image/upload", {
 			method: "post",
